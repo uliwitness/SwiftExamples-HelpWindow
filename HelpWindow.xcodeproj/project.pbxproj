@@ -10,6 +10,11 @@
 		55DE0E651CD6AC760036447D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE0E641CD6AC760036447D /* AppDelegate.swift */; };
 		55DE0E671CD6AC760036447D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DE0E661CD6AC760036447D /* Assets.xcassets */; };
 		55DE0E6A1CD6AC760036447D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DE0E681CD6AC760036447D /* MainMenu.xib */; };
+		55DE0E731CD6AC940036447D /* MasterDetailSourceListWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE0E711CD6AC940036447D /* MasterDetailSourceListWindowController.swift */; };
+		55DE0E741CD6AC940036447D /* MasterDetailSourceListWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DE0E721CD6AC940036447D /* MasterDetailSourceListWindowController.xib */; };
+		55DE0E771CD6ACA30036447D /* RTFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE0E751CD6ACA30036447D /* RTFViewController.swift */; };
+		55DE0E781CD6ACA30036447D /* RTFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DE0E761CD6ACA30036447D /* RTFViewController.xib */; };
+		55DE0E7A1CD6ACF80036447D /* HelpWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE0E791CD6ACF80036447D /* HelpWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +23,11 @@
 		55DE0E661CD6AC760036447D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55DE0E691CD6AC760036447D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		55DE0E6B1CD6AC760036447D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55DE0E711CD6AC940036447D /* MasterDetailSourceListWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterDetailSourceListWindowController.swift; path = ../../MasterDetailSourceListWindow/MasterDetailSourceListWindowController.swift; sourceTree = "<group>"; };
+		55DE0E721CD6AC940036447D /* MasterDetailSourceListWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MasterDetailSourceListWindowController.xib; path = ../../MasterDetailSourceListWindow/MasterDetailSourceListWindowController.xib; sourceTree = "<group>"; };
+		55DE0E751CD6ACA30036447D /* RTFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RTFViewController.swift; path = ../../RTFViewController/RTFViewController/RTFViewController.swift; sourceTree = "<group>"; };
+		55DE0E761CD6ACA30036447D /* RTFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RTFViewController.xib; path = ../../RTFViewController/RTFViewController/RTFViewController.xib; sourceTree = "<group>"; };
+		55DE0E791CD6ACF80036447D /* HelpWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,11 @@
 				55DE0E661CD6AC760036447D /* Assets.xcassets */,
 				55DE0E681CD6AC760036447D /* MainMenu.xib */,
 				55DE0E6B1CD6AC760036447D /* Info.plist */,
+				55DE0E711CD6AC940036447D /* MasterDetailSourceListWindowController.swift */,
+				55DE0E721CD6AC940036447D /* MasterDetailSourceListWindowController.xib */,
+				55DE0E751CD6ACA30036447D /* RTFViewController.swift */,
+				55DE0E761CD6ACA30036447D /* RTFViewController.xib */,
+				55DE0E791CD6ACF80036447D /* HelpWindowController.swift */,
 			);
 			path = HelpWindow;
 			sourceTree = "<group>";
@@ -117,7 +132,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55DE0E671CD6AC760036447D /* Assets.xcassets in Resources */,
+				55DE0E781CD6ACA30036447D /* RTFViewController.xib in Resources */,
 				55DE0E6A1CD6AC760036447D /* MainMenu.xib in Resources */,
+				55DE0E741CD6AC940036447D /* MasterDetailSourceListWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55DE0E771CD6ACA30036447D /* RTFViewController.swift in Sources */,
 				55DE0E651CD6AC760036447D /* AppDelegate.swift in Sources */,
+				55DE0E7A1CD6ACF80036447D /* HelpWindowController.swift in Sources */,
+				55DE0E731CD6AC940036447D /* MasterDetailSourceListWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,10 +12,11 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
 	@IBOutlet weak var window: NSWindow!
-
+	var helpWindow : HelpWindowController?
 
 	func applicationDidFinishLaunching(aNotification: NSNotification) {
-		// Insert code here to initialize your application
+		helpWindow = HelpWindowController( viewControllers: [] )
+		helpWindow!.showWindow( self )
 	}
 
 	func applicationWillTerminate(aNotification: NSNotification) {
