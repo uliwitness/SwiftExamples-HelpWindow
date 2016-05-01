@@ -1,0 +1,40 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green249\blue89;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15140\viewh14680\viewkind0
+\deftab866
+\pard\tx866\pardeftab866\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf2 \CocoaLigature0 //\
+//  RTFViewController.swift\
+//  RTFViewController\
+//\
+//  Created by Uli Kusterer on 01/05/16.\
+//  Copyright \'a9 2016 Uli Kusterer. All rights reserved.\
+//\
+\
+import Cocoa\
+\
+public class RTFViewController: NSViewController \{\
+	@IBOutlet var rtfView: NSTextView!\
+	var filePath : String = ""\
+	\
+	public init?( filePath inFilePath: String )\
+	\{\
+		super.init(nibName: nil, bundle: nil)\
+		filePath = inFilePath;\
+	\}\
+	\
+	required public init?(coder: NSCoder) \{\
+		fatalError("init(coder:) has not been implemented")\
+	\}\
+	\
+    override public func viewDidLoad()\
+	\{\
+        super.viewDidLoad()\
+		\
+		rtfView.string = filePath\
+    \}\
+    \
+\}\
+}

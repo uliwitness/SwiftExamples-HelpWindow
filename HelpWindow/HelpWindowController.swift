@@ -13,7 +13,7 @@ class HelpWindowController: MasterDetailSourceListWindowController {
     override func windowDidLoad() {
 		
 		do {
-			let directoryPath = "/Users/uli/Desktop/Help"
+			let directoryPath = NSBundle.mainBundle().pathForResource( "Help", ofType: "")!
 			var	filenames = try NSFileManager.defaultManager().contentsOfDirectoryAtPath(directoryPath)
 			filenames = filenames.sort()
 			for filename in filenames

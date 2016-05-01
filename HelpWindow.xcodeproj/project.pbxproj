@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5581267E1CD6B8280090C384 /* Help in Resources */ = {isa = PBXBuildFile; fileRef = 5581267D1CD6B8280090C384 /* Help */; };
 		55DE0E651CD6AC760036447D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE0E641CD6AC760036447D /* AppDelegate.swift */; };
 		55DE0E671CD6AC760036447D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DE0E661CD6AC760036447D /* Assets.xcassets */; };
 		55DE0E6A1CD6AC760036447D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DE0E681CD6AC760036447D /* MainMenu.xib */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5581267D1CD6B8280090C384 /* Help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Help; sourceTree = "<group>"; };
 		55DE0E611CD6AC760036447D /* HelpWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DE0E641CD6AC760036447D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55DE0E661CD6AC760036447D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5581267F1CD6B9060090C384 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55DE0E661CD6AC760036447D /* Assets.xcassets */,
+				5581267D1CD6B8280090C384 /* Help */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		55DE0E581CD6AC760036447D = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				55DE0E641CD6AC760036447D /* AppDelegate.swift */,
-				55DE0E661CD6AC760036447D /* Assets.xcassets */,
 				55DE0E681CD6AC760036447D /* MainMenu.xib */,
 				55DE0E6B1CD6AC760036447D /* Info.plist */,
 				55DE0E711CD6AC940036447D /* MasterDetailSourceListWindowController.swift */,
@@ -69,6 +79,7 @@
 				55DE0E751CD6ACA30036447D /* RTFViewController.swift */,
 				55DE0E761CD6ACA30036447D /* RTFViewController.xib */,
 				55DE0E791CD6ACF80036447D /* HelpWindowController.swift */,
+				5581267F1CD6B9060090C384 /* Resources */,
 			);
 			path = HelpWindow;
 			sourceTree = "<group>";
@@ -132,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55DE0E671CD6AC760036447D /* Assets.xcassets in Resources */,
+				5581267E1CD6B8280090C384 /* Help in Resources */,
 				55DE0E781CD6ACA30036447D /* RTFViewController.xib in Resources */,
 				55DE0E6A1CD6AC760036447D /* MainMenu.xib in Resources */,
 				55DE0E741CD6AC940036447D /* MasterDetailSourceListWindowController.xib in Resources */,
@@ -291,6 +303,7 @@
 				55DE0E701CD6AC760036447D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
