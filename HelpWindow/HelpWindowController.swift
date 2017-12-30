@@ -13,15 +13,15 @@ class HelpWindowController: MasterDetailSourceListWindowController {
     override func windowDidLoad() {
 		
 		do {
-			let directoryPath = NSBundle.mainBundle().pathForResource( "Help", ofType: "")!
-			var	filenames = try NSFileManager.defaultManager().contentsOfDirectoryAtPath(directoryPath)
-			filenames = filenames.sort()
+			let directoryPath = Bundle.main.path( forResource: "Help", ofType: "")!
+			var	filenames = try FileManager.default.contentsOfDirectory( atPath: directoryPath )
+			filenames = filenames.sorted()
 			for filename in filenames
 			{
-				let filePath = NSString(string: directoryPath).stringByAppendingPathComponent(filename)
+				let filePath = NSString(string: directoryPath).appendingPathComponent(filename)
 				let rtfVC = RTFViewController( filePath: filePath )
-				rtfVC!.title = NSString(string:filename).stringByDeletingPathExtension
-				let	fileImage = NSWorkspace.sharedWorkspace().iconForFile( filePath )
+				rtfVC!.title = NSString(string:filename).deletingPathExtension
+				let	fileImage = NSWorkspace.shared.icon( forFile: filePath )
 				self.viewControllers.append( MasterSourceListItem( viewController: rtfVC!, image: fileImage ) )
 			}
 		}

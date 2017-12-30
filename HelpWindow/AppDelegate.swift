@@ -14,12 +14,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	@IBOutlet weak var window: NSWindow!
 	var helpWindow : HelpWindowController?
 
-	func applicationDidFinishLaunching(aNotification: NSNotification) {
+	func applicationDidFinishLaunching( _ aNotification: Notification) {
 		helpWindow = HelpWindowController( viewControllers: [] )
 		helpWindow!.showWindow( self )
 	}
 
-	func applicationWillTerminate(aNotification: NSNotification) {
+	func applicationWillTerminate( _ aNotification: Notification) {
 		// Insert code here to tear down your application
 	}
 
